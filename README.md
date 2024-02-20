@@ -10,3 +10,6 @@ To know:
 - If you want to use "Confirmation_instructions.html.erb", "email_changed.html.erb" and "password_change.html.erb" you need to activate in model "Confirmable"
 
 
+Git to know : git revert can revert all the repository except the database ! so if you want to change column etc you need to change via migration !!
+
+
