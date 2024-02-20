@@ -106,5 +106,5 @@ Rails.application.configure do
   }
 
   #dire à Heroku l'URL de mon app est :
-  config.action_mailer.default_url_options = { :host => 'YOURAPPNAME.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'eventbrite-tp.fly.dev' }
 end
