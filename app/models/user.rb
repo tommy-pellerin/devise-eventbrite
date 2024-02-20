@@ -10,7 +10,7 @@ class User < ApplicationRecord
     UserMailer.welcome_email(self).deliver_now
   end
 
-  
+  has_many :admin_events, class_name: 'Event', foreign_key: 'admin_id'
   has_many :attendances
   has_many :events, through: :attendances
 end

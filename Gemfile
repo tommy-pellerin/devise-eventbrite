@@ -66,6 +66,7 @@ group :test do
   gem "selenium-webdriver"
 end
 
+gem 'faker'
 gem 'table_print'
 gem 'letter_opener'
 gem 'dotenv-rails'
