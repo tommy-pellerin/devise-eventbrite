@@ -28,12 +28,16 @@ class Event < ApplicationRecord
   belongs_to :admin, class_name: 'User', foreign_key: 'admin_id'
   has_many :attendances
   has_many :users, through: :attendances
+
+  def end_date
+    self.start_date + self.duration
+  end
   
   private
 
   def start_date_non_past
     errors.add(:start_date, "ne peut pas être dans le passé") if start_date.present? && start_date <= Time.now
-  end
+  end  
 
   def is_multiple_of_5
     errors.add(:duration, "doit etre un multiples de 5") if duration.present? && duration % 5 != 0
