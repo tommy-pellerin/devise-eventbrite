@@ -5,10 +5,7 @@
   <div class="jumbotron">
     <div class="container">
       <h1 class="display-3">Hi there !</h1>
-      <p>Tu trouveras ici l'ensemble des evenements à venir</p>
-      <p>
-        <a href="<%= new_event_path %>" class="btn btn-primary my-2">Créer ton event</a>           
-      </p>      
+      <p>Tu trouveras ici l'ensemble des evenements à venir</p>      
     </div>
   </div>
 
@@ -24,7 +21,7 @@
             <p>Durée : <%= event.duration %></p>
             <p>Prix : <%= event.price %></p>
             <p>Lieu : <%= event.location %></p>
-            <p><a class="btn btn-secondary" href="<%= event_path(event.id) %>" role="button">View details »</a></p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
           </div>  
         <% end %> 
       </div>    
